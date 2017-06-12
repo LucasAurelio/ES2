@@ -1,8 +1,0 @@
-package filtroDeFaturas;
-
-public class Cliente {
-	
-	public Cliente(String Nome, String data_inclusao, String estado){
-		
-	}
-}
