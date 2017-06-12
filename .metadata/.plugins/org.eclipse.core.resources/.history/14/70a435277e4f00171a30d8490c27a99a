@@ -1,0 +1,35 @@
+package testes;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import filtroDeFaturas.*;
+
+public class TesteFatura {
+
+	@Test
+	public void testaCodigo() {
+		System.out.println("Código sendo testado");
+		Cliente cle1 = new Cliente("Gil Bala","2017-04-17","Pernambuco");
+		Fatura ftr1 = new Fatura("24PN3445",33.5,"2017-05-17",cle1);
+		
+		//testando com o código certo
+		String codEsperado = "24PN3445";
+		String codReal = ftr1.getCodigo();
+		Assert.assertEquals(codEsperado, codReal);
+		
+		//testand case Sensitive
+		codEsperado = "24pn3445";
+		codReal = ftr1.getCodigo();
+		Assert.assertNotEquals(codEsperado, codReal);
+		codReal = ftr1.getCodigo().toLowerCase();
+		Assert.assertEquals(codEsperado, codReal);
+		
+		//testando com o código errado
+		codEsperado = "24P3445";
+		codReal = ftr1.getCodigo();
+		Assert.assertNotEquals(codEsperado, codReal);
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package testes;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import filtroDeFaturas.Cliente;
+
+public class TesteCliente {
+
+	@Test
+	public void testeNome() {
+		System.out.println("Nome:");
+		//format: yyyy/mm/dd
+		Cliente cle1 = new Cliente("Lucas","2010-08-10","Paraíba");
+		
+	}
+
+}

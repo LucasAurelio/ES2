@@ -1,0 +1,14 @@
+package filtroDeFaturas;
+
+public class Fatura {
+	
+	protected String codigo;
+	
+	public Fatura(String cod, double valor, String data, Cliente clt){
+		this.codigo = cod;
+	}
+	
+	public String getCodigo(){
+		return codigo;
+	}
+}

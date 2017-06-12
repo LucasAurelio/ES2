@@ -1,0 +1,17 @@
+INDEX VERSION 1.126+C:\Users\lucas\Documents\CollegeProjects\.metadata\.plugins\org.eclipse.jdt.core
+2830578364.index
+1280125838.index
+835146345.index
+715337417.index
+466303670.index
+2957574076.index
+2676464172.index
+1307159094.index
+3027506879.index
+3609772417.index
+3444215418.index
+2733016318.index
+4217922263.index
+3292351695.index
+2830038248.index
+1780831150.index

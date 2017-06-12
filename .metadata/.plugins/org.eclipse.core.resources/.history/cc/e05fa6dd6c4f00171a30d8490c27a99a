@@ -1,0 +1,5 @@
+package filtroDeFaturas;
+
+public class Cliente {
+
+}

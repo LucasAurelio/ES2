@@ -1,0 +1,35 @@
+package testes;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import filtroDeFaturas.Cliente;
+
+public class TesteCliente {
+
+	@Test
+	public void testeNome() {
+		System.out.println("Nome:");
+		//formato da data: yyyy-MM-dd
+		Cliente cle1 = new Cliente("Lucas","2010-08-10","Paraíba");
+		//testando com mês fornecido
+		String mesEsperado = "Paraíba";
+		String mesReal = cle1.getEstado();
+		Assert.assertEquals(mesEsperado,mesReal);
+		
+		//testando caseSensitive
+		mesEsperado = "paraíba";
+		mesReal = cle1.getEstado().toLowerCase();
+		Assert.assertEquals(mesEsperado,mesReal);
+		
+		mesEsperado = "PARAÍBA";
+		mesReal = cle1.getEstado().toUpperCase();
+		Assert.assertEquals(mesEsperado,mesReal);
+		
+		//testando com mês errado
+		mesEsperado = "Parríba";
+		mesReal = cle1.getEstado();
+		Assert.assertNotEquals(mesEsperado, mesReal);
+	}
+
+}

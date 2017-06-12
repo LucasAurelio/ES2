@@ -1,0 +1,8 @@
+package filtroDeFaturas;
+
+public class Cliente {
+	
+	public void Cliente(String Nome, String data_inclusao, String estado){
+		
+	}
+}
